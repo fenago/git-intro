@@ -1,6 +1,6 @@
 <img align="right" src="./logo-small.png">
 
-# Lab: Finding Bugs
+# Lab: Debugging with Git (bisect)
 Software bugs have been a problem for as long as software has existed. As Git records all the commits to the repository then it becomes a great source of information and diagnostic tool when identifying how issues were introduced.
 
 #### Tutorial Overview
@@ -15,7 +15,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`cd ~/work/git/5/ && mv git .git`
+`cd ~/work/git-intro/5/ && mv git .git`
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 

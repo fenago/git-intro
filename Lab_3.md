@@ -17,7 +17,7 @@ There is no requirement for any setup.
 There should be terminal opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 Run the following command in **terminal**:
-`cd ~/work/git/3/ && mv git .git`
+`cd ~/work/git-intro/3/ && mv git .git`
 
 **Note:** To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -30,7 +30,7 @@ The friendly name allows you to refer to the location in other commands. Your lo
 
 **Task**
 
-This environment has a remote repository location of `/home/jovyan/work/git/remote-project/1`. Using git remote, add this remote location with the name origin.
+This environment has a remote repository location of `/home/jovyan/work/git-intro/remote-project/1`. Using git remote, add this remote location with the name origin.
 
 **Protip**
 
@@ -38,7 +38,7 @@ If you use git clone, discussed in a future scenario, then the location you're c
 
 **Solution**
 
-`git remote add origin /home/jovyan/work/git/remote-project/1`
+`git remote add origin /home/jovyan/work/git-intro/remote-project/1`
 
 
 ### Step 2 - Git Push
@@ -68,8 +68,8 @@ There should be terminal opened already. You can also open another New terminal 
 Let's make some change from another folder and push them to remote. Run following remote in **terminal 2**:
 
 ```
-cd ~/work/git/duplicate/ && mv git .git
-git remote add origin /home/jovyan/work/git/remote-project/1
+cd ~/work/git-intro/duplicate/ && mv git .git
+git remote add origin /home/jovyan/work/git-intro/remote-project/1
 git pull origin master
 
 echo "new file" >> newfile.txt
