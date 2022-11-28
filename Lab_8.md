@@ -20,6 +20,7 @@ Setting up the empty repository for a subtree merge
 2.  Create a new directory and navigate to it.
 
 ```
+$ cd ~/work
 $ mkdir test
 $ cd test
 ```
@@ -28,7 +29,7 @@ $ cd test
 
 ```
 $ git init
-> Initialized empty Git repository in /Users/octocat/tmp/test/.git/
+> Initialized empty Git repository in /home/jovyan/work/test/.git/
 ```
 
 4.  Create and commit a new file.
@@ -65,19 +66,13 @@ $ git remote add -f spoon-knife https://github.com/octocat/Spoon-Knife.git
     doesn\'t change any of your files locally, but it does prepare Git
     for the next step.
 
-    If you\'re using Git 2.9 or above:
 
 ```
 $ git merge -s ours --no-commit --allow-unrelated-histories spoon-knife/main
-        > Automatic merge went well; stopped before committing as requested
+
+    > Automatic merge went well; stopped before committing as requested
 ```
 
-    If you\'re using Git 2.8 or below:
-
-```
-$ git merge -s ours --no-commit spoon-knife/main
-        > Automatic merge went well; stopped before committing as requested
-```
 
 3.  Create a new directory called **spoon-knife**, and copy the Git
     history of the `Spoon-Knife` project into it.
@@ -90,7 +85,8 @@ $ git read-tree --prefix=spoon-knife/ -u spoon-knife/main
 
 ```
 $ git commit -m "Subtree merged in spoon-knife"
-        > [main fe0ca25] Subtree merged in spoon-knife
+
+    > [main fe0ca25] Subtree merged in spoon-knife
 ```
 
 Although we\'ve only added one subproject, any number of subprojects can

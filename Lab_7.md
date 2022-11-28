@@ -19,7 +19,8 @@ creates an empty repo and explores git submodules.
     $ mkdir git-submodule-demo
     $ cd git-submodule-demo/
     $ git init
-    Initialized empty Git repository in /Users/atlassian/git-submodule-demo/.git/
+    
+    Initialized empty Git repository in /home/jovyan/git-submodule-demo/.git/
 ```
 
 This sequence of commands will create a new directory
